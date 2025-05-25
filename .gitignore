@@ -1,2 +1,4 @@
 dp.sqlite3
 _pycache_
+.lms_env
+.env
