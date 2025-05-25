@@ -1,0 +1,165 @@
+[
+  {
+    "model": "book.Author",
+    "pk": 1,
+    "fields": {
+      "name": "J.K. Rowling",
+      "biography": "British author, creator of the Harry Potter series."
+    }
+  },
+  {
+    "model": "book.Author",
+    "pk": 2,
+    "fields": {
+      "name": "Stephen King",
+      "biography": "American author of horror, supernatural fiction, suspense, crime, science-fiction, and fantasy novels."
+    }
+  },
+  {
+    "model": "book.Author",
+    "pk": 3,
+    "fields": {
+      "name": "Jane Austen",
+      "biography": "English novelist known primarily for her six major novels, which interpret, critique, and comment upon the British landed gentry at the end of the 18th century."
+    }
+  },
+  {
+    "model": "book.Category",
+    "pk": 1,
+    "fields": {
+      "name": "Fantasy",
+      "description": "Books featuring magical elements and mythical creatures."
+    }
+  },
+  {
+    "model": "book.Category",
+    "pk": 2,
+    "fields": {
+      "name": "Horror",
+      "description": "Books designed to frighten, scare, or startle readers."
+    }
+  },
+  {
+    "model": "book.Category",
+    "pk": 3,
+    "fields": {
+      "name": "Classic",
+      "description": "Books that have stood the test of time and are considered literary masterpieces."
+    }
+  },
+  {
+    "model": "users.Member",
+    "pk": 1,
+    "fields": {
+      "email": "alice.reads@example.com",
+      "membership_date": "2023-01-15",
+      "phone_number": "111-222-3333",
+      "is_active": true
+    }
+  },
+  {
+    "model": "users.Member",
+    "pk": 2,
+    "fields": {
+      "email": "bob.books@example.com",
+      "membership_date": "2023-02-20",
+      "phone_number": "444-555-6666",
+      "is_active": true
+    }
+  },
+  {
+    "model": "users.Member",
+    "pk": 3,
+    "fields": {
+      "email": "charlie.pages@example.com",
+      "membership_date": "2023-03-25",
+      "phone_number": null,
+      "is_active": true
+    }
+  },
+  {
+    "model": "book.Book",
+    "pk": 1,
+    "fields": {
+      "title": "Harry Potter and the Sorcerer's Stone",
+      "author": 1,
+      "ISBN": "978-0439708180",
+      "category": 1,
+      "availability": true,
+      "created_at": "2023-01-01T10:00:00Z",
+      "updated_at": "2023-01-01T10:00:00Z"
+    }
+  },
+  {
+    "model": "book.Book",
+    "pk": 2,
+    "fields": {
+      "title": "It",
+      "author": 2,
+      "ISBN": "978-1501175466",
+      "category": 2,
+      "availability": true,
+      "created_at": "2023-01-05T11:30:00Z",
+      "updated_at": "2023-01-05T11:30:00Z"
+    }
+  },
+  {
+    "model": "book.Book",
+    "pk": 3,
+    "fields": {
+      "title": "Pride and Prejudice",
+      "author": 3,
+      "ISBN": "978-0141439518",
+      "category": 3,
+      "availability": false,
+      "created_at": "2023-01-10T09:15:00Z",
+      "updated_at": "2024-05-20T14:00:00Z"
+    }
+  },
+  {
+    "model": "book.Book",
+    "pk": 4,
+    "fields": {
+      "title": "The Shining",
+      "author": 2,
+      "ISBN": "978-0385121675",
+      "category": 2,
+      "availability": true,
+      "created_at": "2023-02-01T16:00:00Z",
+      "updated_at": "2023-02-01T16:00:00Z"
+    }
+  },
+  {
+    "model": "borrow_record.BorrowRecord",
+    "pk": 1,
+    "fields": {
+      "book": 1,
+      "member": 1,
+      "borrow_date": "2024-05-01T10:00:00Z",
+      "return_date": "2024-05-10T10:00:00Z",
+      "due_date": "2024-05-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "borrow_record.BorrowRecord",
+    "pk": 2,
+    "fields": {
+      "book": 2,
+      "member": 2,
+      "borrow_date": "2024-04-20T14:00:00Z",
+      "return_date": "2024-05-05T11:00:00Z",
+      "due_date": "2024-05-04T14:00:00Z"
+    }
+  },
+  {
+    "model": "borrow_record.BorrowRecord",
+    "pk": 3,
+    "fields": {
+      "book": 3,
+      "member": 1,
+      "borrow_date": "2024-05-10T09:00:00Z",
+      "return_date": "2024-05-20T09:00:00Z",
+      "due_date": "2024-05-24T09:00:00Z"
+    }
+  }
+]

@@ -9,7 +9,7 @@ class AuthorSerializer(serializers.ModelSerializer):
 class CategorySerializer(serializers.ModelSerializer):
     class Meta:
         model = Category
-        fields = ['name',]
+        fields = ['id','name','description']
         
 class BookWriteSerializer(serializers.ModelSerializer):
     class Meta:
