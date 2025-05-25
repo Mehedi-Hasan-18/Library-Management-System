@@ -10,6 +10,11 @@ class CategorySerializer(serializers.ModelSerializer):
     class Meta:
         model = Category
         fields = ['name',]
+        
+class BookWriteSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Book
+        fields = ['title', 'author', 'category', 'availability', 'ISBN']
 
 class BookSerializer(serializers.ModelSerializer):
     author = AuthorSerializer()
