@@ -114,7 +114,7 @@ This includes request/response samples and detailed endpoint descriptions.
 
 * `member`: FK → Custom `User`
 * `book`: FK → Book
-* `borrow_date`, `due_date`: DateFields
+* `borrow_date`, `due_date`,`return_date`: DateFields
 
 ## 📄 Example Request
 
